@@ -1,0 +1,22 @@
+{
+  "claim_in_competition_paper": "max absolute reconstruction error 2.84e-8 (A2601731.pdf §3.2)",
+  "independently_reproduced": false,
+  "attempts": {
+    "taster_descriptor_standardization_ddof0": {
+      "max_abs_error": 0.8407692881506865,
+      "median_row_rmse": 0.02245665912129181,
+      "n_rows_below_1e-6": 0,
+      "n_unique_matched_official_beers": 250,
+      "mean_column_pearson_r": 0.9950616168980175
+    },
+    "taster_descriptor_standardization_ddof1": {
+      "max_abs_error": 0.832915945611467,
+      "median_row_rmse": 0.022593205653458747,
+      "n_rows_below_1e-6": 0,
+      "n_unique_matched_official_beers": 250,
+      "mean_column_pearson_r": 0.995061784725449
+    }
+  },
+  "diagnosis": "按 (评委 × 描述词) 逐列标准化后取啤酒级均值, 与官方标签列相关 >0.99、斜率≈1、截距≈0、逐列 SD 高度一致, 250 行一一匹配唯一; 但行 RMSE 中位约 0.02, 且与每款啤酒的记录数相关 (r≈0.73), 达不到 1e-8. 按品评日期分组标准化更差. 说明官方重建另需: 精确的 beer_name→官方 beer 映射、零方差组合的回退定义、以及可能的场次/权重口径; 竞赛论文未提供该脚本与参数.",
+  "paper_writing_rule": "2.84e-8 目前只能作为竞赛论文的自述结果引用, 不能写成『本文独立验证』; 若拟作为 novelty, 必须先补齐可复现的重建脚本并达到该量级, 否则只写『原始 0-6 评分已获得, 可直接构造 A/B/C 三种啤酒级标签』."
+}

@@ -1,0 +1,19 @@
+﻿compound,chemical_name,unit_threshold_table,unit_field_dictionary,unit_consistent,n_samples,threshold_mean,threshold_median,median_conc_over_threshold_mean,pct_above_mean,pct_above_median,sensitivity_pp,flag
+CS2,Carbon disulfide,ug/L,ug/L,yes,250,50.0,50.0,0.004,0.0,0.0,0.0,stable
+DES,Diethyl sulfide,ug/L,ug/L,yes,250,1.2,1.2,0.547,18.4,18.4,0.0,stable
+DMS,Dimethyl sulfide,ug/L,ug/L,yes,250,17.25,19.0,1.418,67.2,62.4,4.8,stable
+GFS,Sugars,g/L,g/L,yes,250,2.9,2.9,0.067,18.0,18.0,0.0,stable
+H2S,Hydrogen sulfide,ug/L,ug/L,yes,250,3.5,3.5,2.528,92.0,92.0,0.0,stable
+X4VG,4-vinylguaiacol,mg/L,mg/L,yes,250,0.206333,0.2,0.589,6.4,7.2,-0.8,stable
+acetaldehyde,Acetaldehyde,mg/L,mg/L,yes,250,50.0,50.0,0.082,0.0,0.0,0.0,stable
+bitterness,Iso-alpha acids,IBU,IBU,yes,250,5.0,5.0,3.637,86.4,86.4,0.0,stable
+citronellol,Citronellol,mg/L,mg/L,yes,250,0.0245,0.0245,8.944,92.4,92.4,0.0,stable
+ethanol..v.v.,Ethanol,v/v,v/v,yes,250,1.757256,1.737199,4.094,97.6,97.6,0.0,stable
+furfural,Furfural,mg/L,mg/L,yes,249,60.0,37.5,0.0,0.0,0.0,0.0,stable
+geraniol,Geraniol,mg/L,mg/L,yes,246,0.0315,0.023,4.287,75.6,82.1,-6.5,UNSTABLE
+glycerol,Glycerol,g/L,g/L,yes,250,4.433333,2.0,0.575,2.8,77.6,-74.8,UNSTABLE
+iron,Iron,mg/L,mg/L,yes,250,0.1,0.1,0.95,44.8,44.8,0.0,stable
+isobutanol,Isobutanol,mg/L,mg/L,yes,250,80.0,100.0,0.139,0.0,0.0,0.0,stable
+linalool,Linalool,mg/L,mg/L,yes,247,0.027285,0.0045,13.551,98.4,100.0,-1.6,stable
+methylpyrazine,Methylpyrazine,mg/L,mg/L,yes,250,1.0,1.0,0.0,0.0,0.0,0.0,stable
+protein.g.L.,Protein,g/L,g/L,yes,250,1.023933,0.846,7.374,99.6,99.6,0.0,stable

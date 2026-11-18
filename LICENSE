@@ -1,0 +1,18 @@
+Copyright (c) 2026 Yang Yang, Yuxuan Jiang, Yalu Cai, Honghao Cai.
+All rights reserved.
+
+SOFTWARE LICENCE: NOT YET DETERMINED.
+
+This file is a placeholder. The authors have not yet chosen a licence for the
+software in this repository. Until a licence is added by the authors:
+
+  - no permission is granted to copy, modify, redistribute or use this code
+    beyond viewing it and running it for academic verification;
+  - the CC BY 4.0 licence of the source dataset (Schreurs et al. 2024,
+    DOI 10.5281/zenodo.10653704) applies to that dataset only and does not
+    license this repository's code;
+  - the derived tables and out-of-fold predictions in results/ are research
+    outputs of the authors and are subject to the same pending decision.
+
+When the authors confirm a licence, replace this file with the chosen licence
+text and record the decision in docs/RELEASE_AUDIT.md and CITATION.cff.

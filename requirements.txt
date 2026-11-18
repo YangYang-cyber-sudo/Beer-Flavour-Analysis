@@ -1,0 +1,23 @@
+# Beer-Flavour-Analysis — tested environment
+#
+# Python 3.12 (tested with CPython 3.12.14 on Windows 11).
+# Install with:  python -m pip install -r requirements.txt
+#
+# These are the direct dependencies.  The complete transitive set that was
+# actually installed and used for the release tests is pinned in
+# requirements-lock.txt.
+#
+# PyTorch is used only by the mlp_torch arm of analysis/prep_h2h.py.  On Linux
+# the default PyPI wheel may include CUDA libraries; for a CPU-only install:
+#   pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cpu
+
+numpy==2.2.6
+pandas==2.2.3
+scipy==1.15.3
+scikit-learn==1.6.1
+catboost==1.2.10
+lightgbm==4.6.0
+matplotlib==3.10.3
+openpyxl==3.1.5
+joblib==1.5.1
+torch==2.7.1

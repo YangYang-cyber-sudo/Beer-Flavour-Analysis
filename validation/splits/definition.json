@@ -1,0 +1,8 @@
+{
+  "seed": 2601731,
+  "unit": "beer",
+  "outer": 5,
+  "inner": 3,
+  "scope_minus_one": "full-data inner folds for later deployment fit",
+  "label_access_for_split_generation": false
+}

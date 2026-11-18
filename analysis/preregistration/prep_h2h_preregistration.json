@@ -1,0 +1,66 @@
+{
+  "registered_at": "2026-11-15 00:13 GMT+8",
+  "frozen_before_run": true,
+  "purpose": "Journal of Food Science v4' section 3.3: head-to-head comparison of chemical-data preprocessing pipelines on the same 250 beers, same 50 sensory targets, same frozen 5-fold outer split, same model families and hyperparameters.",
+  "reporting_rule": "ALL registered arms x models x folds are reported. No model, target, fold, or metric may be dropped after seeing results. No post-hoc swapping of primary metric. If only a subset of model families improves, the conclusion MUST be written as family-dependent effect, not as overall superiority.",
+  "data": {
+    "X": "analysis_2026a/official/附件/1.csv (250 x 231 numeric features, beer-indexed)",
+    "y": "analysis_2026a/official/附件/4.csv (250 x 50 continuous sensory targets)",
+    "split": "analysis_2026a/q1/splits/outer.csv (5 equal folds, seed 2601731, no label access)",
+    "metadata": "analysis_2026a/q1/feature_metadata.csv",
+    "verified_log": "transform_status startswith 'log10' (37 columns)",
+    "verified_identity": "transform_status == 'mostly_identity_with_exceptions' (33 columns)",
+    "groups": "origin_metadata",
+    "note": "8.xlsx Calibrated chemical dataset is NOT used as model input in this experiment; input-source comparison is a separate question."
+  },
+  "arms": {
+    "A_plain": {
+      "label": "Routine preprocessing (baseline)",
+      "config": {"shape": "identity", "clip": 0, "scale": "standard", "indicators": true, "special": "keep"},
+      "interpretation": "Plain z-score on the raw numeric table, no chemical-unit priors, no winsorisation."
+    },
+    "B_log": {
+      "label": "Arm JIA (q1 log pipeline)",
+      "config": {"shape": "signed_log", "clip": 0.01, "scale": "robust", "indicators": true, "special": "keep"},
+      "interpretation": "signed_log on ~verified_log columns (194), fold-wise 1/99% winsorisation, median/IQR scaling."
+    },
+    "B_increment": {
+      "label": "Arm YI (q1_v2 IncrementTransform pipeline)",
+      "config": {"shape": "source_group", "clip": 0.01, "scale": "by_source", "indicators": true, "special": "indicator"},
+      "interpretation": "signed_log only on 33 verified-identity columns, by_source scaling (mean/std for verified-log columns, median/IQR elsewhere), explicit sentinel -1.81781854 indicator columns."
+    }
+  },
+  "arms_note": "All three arms use the SAME IncrementTransform class (a subclass of FoldTransform). A_plain output is asserted bit-identical to legacy FoldTransform(plain) output. JIA and YI both carry clip=0.01, so their mutual contrast isolates shape/scale/special only.",
+  "models": [
+    {"id": "ridge",       "tier": "linear_kernel", "family": "ridge",       "params": {"alpha": 100}},
+    {"id": "pls",         "tier": "linear_kernel", "family": "pls",         "params": {"n_components": 5}},
+    {"id": "krr",         "tier": "linear_kernel", "family": "krr",         "params": {"alpha": 0.1, "gamma_factor": 1}},
+    {"id": "elastic",     "tier": "linear_kernel", "family": "elastic",     "params": {"alpha": 0.2, "l1_ratio": 0.2}},
+    {"id": "extratrees",  "tier": "tree",          "family": "extratrees",  "params": {"n_estimators": 200, "min_samples_leaf": 2, "max_features": 0.7}},
+    {"id": "randomforest","tier": "tree",          "family": "randomforest","params": {"n_estimators": 200, "min_samples_leaf": 2, "max_features": 0.7}},
+    {"id": "mlp_sklearn", "tier": "neural",        "family": "mlp_sklearn", "params": {"hidden_layer_sizes": [64, 32], "alpha": 0.001, "max_iter": 300}},
+    {"id": "mlp_torch",   "tier": "neural",        "family": "mlp_torch",   "params": {"hidden": [128, 64], "epochs": 300, "lr": 0.001, "weight_decay": 0.0001}}
+  ],
+  "model_note": "All hyperparameters are fixed and NOT tuned per arm, so no arm receives an optimisation advantage. Any data-dependent quantity (KRR median-distance bandwidth, target mean/sd) is computed on the training fold only.",
+  "ladder": {
+    "model": "ridge",
+    "steps": {
+      "L0": {"shape": "identity",     "clip": 0,    "scale": "standard",   "indicators": true, "special": "keep"},
+      "L1": {"shape": "identity",     "clip": 0.01, "scale": "standard",   "indicators": true, "special": "keep"},
+      "L2": {"shape": "signed_log",   "clip": 0.01, "scale": "standard",   "indicators": true, "special": "keep"},
+      "L3": {"shape": "signed_log",   "clip": 0.01, "scale": "robust",     "indicators": true, "special": "keep"},
+      "L4": {"shape": "signed_log",   "clip": 0.01, "scale": "robust",     "indicators": true, "special": "indicator"},
+      "L5": {"shape": "source_group", "clip": 0.01, "scale": "robust",     "indicators": true, "special": "indicator"},
+      "L6": {"shape": "source_group", "clip": 0.01, "scale": "by_source",  "indicators": true, "special": "indicator"}
+    },
+    "note": "L0=A_plain, L3=B_log, L6=B_increment. Isolates the marginal contribution of each preprocessing switch."
+  },
+  "primary_metric": "macro RMSE over 50 targets on pooled 250 out-of-fold predictions, in the original 4.csv continuous scale",
+  "secondary_metrics": ["per-target RMSE", "per-target Spearman rho between OOF prediction and truth", "macro MAE"],
+  "inference": [
+    "Per target: paired Wilcoxon signed-rank on the 250 per-sample squared-error differences (A minus B); positive means B is better.",
+    "Benjamini-Hochberg FDR correction across the 50 targets within each (arm, model) contrast.",
+    "Cross-model consistency: number of registered models whose macro RMSE improves, reported in full, never subset-selected."
+  ],
+  "excluded_by_rule": ["R2 / nRMSE / error-reduction percent as primary evidence (same information as RMSE scaled by target sd)", "any head-to-head claim against Nature Communications numbers", "selective reporting of only winning models"]
+}

@@ -1,0 +1,18 @@
+{
+  "registered_at": "2026-11-15 00:22 GMT+8",
+  "status": "POST-HOC SENSITIVITY CONTROL, explicitly declared, NOT part of the primary preregistered contrast",
+  "trigger": "After inspecting the preregistered run, A_plain (no winsorisation at all) produced macro RMSE 1.65-1.93 on scale-sensitive models, with 38/50 Ridge targets above RMSE 1.0 and median 1.4997. The Ridge ladder showed a single fold-wise 1/99% clip (L1) already cuts RMSE from 1.6471 to 0.5026, better than both proposed arms (B_log 0.6606, B_increment 0.5817). A no-protection baseline is therefore a straw man: any routine chemometric workflow applies some outlier handling.",
+  "question": "Does the chemistry-aware preprocessing have ANY incremental value over a routine pipeline WITH THE SAME outlier protection? This is the stricter, reviewer-relevant comparison.",
+  "added_arm": {
+    "A_clip": {
+      "label": "Routine preprocessing + fold-wise winsorisation (fair baseline)",
+      "config": {"shape": "identity", "clip": 0.01, "scale": "standard", "indicators": true, "special": "keep"},
+      "note": "Identical to ladder step L1. z-score plus fold-wise 1/99% clipping, no chemical-unit priors."
+    }
+  },
+  "models": "The SAME 8 registered models with the SAME frozen hyperparameters as prep_h2h_preregistration.json. No model added, removed or retuned.",
+  "contrasts": ["B_log_vs_A_clip", "B_increment_vs_A_clip", "A_clip_vs_A_plain"],
+  "metrics": "Identical to the preregistration: macro RMSE, macro Spearman rho, per-target paired Wilcoxon on 250 OOF squared-error differences, BH-FDR within each (contrast, model).",
+  "reporting_rule": "All results reported in full regardless of direction. This addendum may OVERTURN the headline 'our method is better' claim and must be reported to the authors verbatim if it does.",
+  "honesty_note": "Because this arm was added after seeing the primary results, its outcomes are labelled sensitivity/robustness evidence and cannot be presented as a confirmatory preregistered test."
+}

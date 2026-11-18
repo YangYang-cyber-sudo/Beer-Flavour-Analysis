@@ -1,0 +1,90 @@
+cff-version: 1.2.0
+message: "If you use this software or its derived tables, please cite the associated manuscript."
+title: "Beer-Flavour-Analysis: above-threshold flavour compounds and trained-panel scores in commercial beers"
+type: software
+version: 1.0.0
+date-released: "2026-11-18"
+abstract: >-
+  Analysis code, frozen five-fold outer / three-fold inner splits, out-of-fold
+  predictions and derived tables for a study of 250 commercial beers
+  characterised by 231 chemical properties and 50 trained-panel descriptors.
+  The study tests whether exceeding a compound's literature sensory threshold
+  is sufficient evidence that routine chemical measurements can monitor the
+  corresponding sensory attribute.
+keywords:
+  - beer flavour
+  - sensory analysis
+  - sensory thresholds
+  - trained panel
+  - nested cross-validation
+  - multi-target regression
+  - chemometrics
+  - reproducibility
+authors:
+  - family-names: Yang
+    given-names: Yang
+    affiliation: "School of Science, Jimei University, Xiamen, Fujian 361021, China"
+  - family-names: Jiang
+    given-names: Yuxuan
+    affiliation: "School of Science, Jimei University, Xiamen, Fujian 361021, China"
+  - family-names: Cai
+    given-names: Yalu
+    affiliation: "School of Science, Jimei University, Xiamen, Fujian 361021, China"
+  - family-names: Cai
+    given-names: Honghao
+    affiliation: "School of Science, Jimei University, Xiamen, Fujian 361021, China"
+    email: hhcai@jmu.edu.cn
+references:
+  - type: article
+    title: "Above-threshold flavour compounds and trained-panel scores in commercial beers: weak correspondence for terpenoids and sulfur volatiles"
+    authors:
+      - family-names: Yang
+        given-names: Yang
+      - family-names: Jiang
+        given-names: Yuxuan
+      - family-names: Cai
+        given-names: Yalu
+      - family-names: Cai
+        given-names: Honghao
+    journal: Microchemical Journal
+    status: submitted
+    year: 2026
+  - type: article
+    title: "Predicting and improving complex beer flavor through machine learning"
+    authors:
+      - family-names: Schreurs
+        given-names: Michiel
+      - family-names: Piampongsant
+        given-names: Supinya
+      - family-names: Roncoroni
+        given-names: Miguel
+      - family-names: Cool
+        given-names: Lieve
+      - family-names: Herrera-Malaver
+        given-names: Beatriz
+      - family-names: Vanderaa
+        given-names: Carolina
+      - family-names: Theßeling
+        given-names: Florian A.
+      - family-names: Kreft
+        given-names: Łukasz
+      - family-names: Botzki
+        given-names: Alexander
+      - family-names: Malcorps
+        given-names: Philippe
+      - family-names: Daenen
+        given-names: Lynn
+      - family-names: Wenseleers
+        given-names: Tom
+      - family-names: Verstrepen
+        given-names: Kevin J.
+    journal: Nature Communications
+    volume: 15
+    start: 2368
+    year: 2024
+    doi: 10.1038/s41467-024-46346-0
+# TODO after the first public release:
+#   - add repository-code (GitHub URL)
+#   - add the article DOI
+#   - add the Zenodo software DOI
+#   - add the confirmed software licence (do not assume CC BY 4.0 for the code)

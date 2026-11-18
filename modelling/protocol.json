@@ -1,0 +1,930 @@
+{
+  "version": "2026A_Q1_v1",
+  "selection": "macro_NRMSE_SD + 0.2 * worst_20pct_mean_NRMSE_SD",
+  "focus_families": 3,
+  "seed": 2601731,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "exploration_disclosure": "Earlier seed-2026 CV informed candidate families; this cohort is not an independent external test.",
+  "grade_status": "relative_only_not_original_0_6; two alternatives, participant decision pending",
+  "candidates": [
+    {
+      "id": "mean_00",
+      "family": "mean",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {}
+    },
+    {
+      "id": "ridge_00",
+      "family": "ridge",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 100
+      }
+    },
+    {
+      "id": "ridge_01",
+      "family": "ridge",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 10
+      }
+    },
+    {
+      "id": "ridge_02",
+      "family": "ridge",
+      "stage": "coarse",
+      "pre": {
+        "shape": "signed_log",
+        "clip": 0.01,
+        "scale": "robust",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 100
+      }
+    },
+    {
+      "id": "ridge_03",
+      "family": "ridge",
+      "stage": "coarse",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 1000
+      }
+    },
+    {
+      "id": "ridge_04",
+      "family": "ridge",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 100
+      }
+    },
+    {
+      "id": "ridge_05",
+      "family": "ridge",
+      "stage": "refine",
+      "pre": {
+        "shape": "signed_log",
+        "clip": 0.01,
+        "scale": "robust",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 10
+      }
+    },
+    {
+      "id": "ridge_06",
+      "family": "ridge",
+      "stage": "refine",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true,
+        "group_balance": true
+      },
+      "params": {
+        "alpha": 100
+      }
+    },
+    {
+      "id": "ridge_07",
+      "family": "ridge",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true,
+        "select": 100
+      },
+      "params": {
+        "alpha": 1000
+      }
+    },
+    {
+      "id": "elastic_00",
+      "family": "elastic",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 0.2,
+        "l1_ratio": 0.2
+      }
+    },
+    {
+      "id": "elastic_01",
+      "family": "elastic",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 0.05,
+        "l1_ratio": 0.5
+      }
+    },
+    {
+      "id": "elastic_02",
+      "family": "elastic",
+      "stage": "coarse",
+      "pre": {
+        "shape": "signed_log",
+        "clip": 0.01,
+        "scale": "robust",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 0.02,
+        "l1_ratio": 0.2
+      }
+    },
+    {
+      "id": "elastic_03",
+      "family": "elastic",
+      "stage": "coarse",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 0.01,
+        "l1_ratio": 0.8
+      }
+    },
+    {
+      "id": "elastic_04",
+      "family": "elastic",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 0.01,
+        "l1_ratio": 0.2
+      }
+    },
+    {
+      "id": "elastic_05",
+      "family": "elastic",
+      "stage": "refine",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 0.05,
+        "l1_ratio": 0.2
+      }
+    },
+    {
+      "id": "elastic_06",
+      "family": "elastic",
+      "stage": "refine",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true,
+        "group_balance": true
+      },
+      "params": {
+        "alpha": 0.01,
+        "l1_ratio": 0.5
+      }
+    },
+    {
+      "id": "elastic_07",
+      "family": "elastic",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true,
+        "select": 100
+      },
+      "params": {
+        "alpha": 0.1,
+        "l1_ratio": 0.8
+      }
+    },
+    {
+      "id": "pls_00",
+      "family": "pls",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_components": 2
+      }
+    },
+    {
+      "id": "pls_01",
+      "family": "pls",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_components": 5
+      }
+    },
+    {
+      "id": "pls_02",
+      "family": "pls",
+      "stage": "coarse",
+      "pre": {
+        "shape": "signed_log",
+        "clip": 0.01,
+        "scale": "robust",
+        "indicators": true
+      },
+      "params": {
+        "n_components": 10
+      }
+    },
+    {
+      "id": "pls_03",
+      "family": "pls",
+      "stage": "coarse",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_components": 15
+      }
+    },
+    {
+      "id": "pls_04",
+      "family": "pls",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_components": 2
+      }
+    },
+    {
+      "id": "pls_05",
+      "family": "pls",
+      "stage": "refine",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_components": 5
+      }
+    },
+    {
+      "id": "pls_06",
+      "family": "pls",
+      "stage": "refine",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true,
+        "group_balance": true
+      },
+      "params": {
+        "n_components": 10
+      }
+    },
+    {
+      "id": "pls_07",
+      "family": "pls",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true,
+        "select": 100
+      },
+      "params": {
+        "n_components": 20
+      }
+    },
+    {
+      "id": "krr_00",
+      "family": "krr",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 0.1,
+        "gamma_factor": 1
+      }
+    },
+    {
+      "id": "krr_01",
+      "family": "krr",
+      "stage": "coarse",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 0.01,
+        "gamma_factor": 1
+      }
+    },
+    {
+      "id": "krr_02",
+      "family": "krr",
+      "stage": "coarse",
+      "pre": {
+        "shape": "signed_log",
+        "clip": 0.01,
+        "scale": "robust",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 1,
+        "gamma_factor": 0.5
+      }
+    },
+    {
+      "id": "krr_03",
+      "family": "krr",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 0.1,
+        "gamma_factor": 4
+      }
+    },
+    {
+      "id": "krr_04",
+      "family": "krr",
+      "stage": "refine",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 0.1,
+        "gamma_factor": 4
+      }
+    },
+    {
+      "id": "krr_05",
+      "family": "krr",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 0.01,
+        "gamma_factor": 0.5
+      }
+    },
+    {
+      "id": "krr_06",
+      "family": "krr",
+      "stage": "refine",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true,
+        "group_balance": true
+      },
+      "params": {
+        "alpha": 0.1,
+        "gamma_factor": 1
+      }
+    },
+    {
+      "id": "krr_07",
+      "family": "krr",
+      "stage": "refine",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "alpha": 1,
+        "gamma_factor": 1
+      }
+    },
+    {
+      "id": "extra_00",
+      "family": "extra",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_leaf_nodes": 100
+      }
+    },
+    {
+      "id": "extra_01",
+      "family": "extra",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_leaf_nodes": 100
+      }
+    },
+    {
+      "id": "extra_02",
+      "family": "extra",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 4,
+        "max_features": 0.7,
+        "max_leaf_nodes": 100
+      }
+    },
+    {
+      "id": "extra_03",
+      "family": "extra",
+      "stage": "coarse",
+      "pre": {
+        "shape": "signed_log",
+        "clip": 0.01,
+        "scale": "robust",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 2,
+        "max_features": 0.4,
+        "max_leaf_nodes": 100
+      }
+    },
+    {
+      "id": "extra_04",
+      "family": "extra",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 400,
+        "min_samples_leaf": 2,
+        "max_features": 0.5,
+        "max_leaf_nodes": 100
+      }
+    },
+    {
+      "id": "extra_05",
+      "family": "extra",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 400,
+        "min_samples_leaf": 3,
+        "max_features": 1.0,
+        "max_leaf_nodes": 100
+      }
+    },
+    {
+      "id": "extra_06",
+      "family": "extra",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true,
+        "select": 100
+      },
+      "params": {
+        "n_estimators": 400,
+        "min_samples_leaf": 2,
+        "max_features": 0.7,
+        "max_leaf_nodes": 100
+      }
+    },
+    {
+      "id": "extra_07",
+      "family": "extra",
+      "stage": "refine",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 400,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_leaf_nodes": 100
+      }
+    },
+    {
+      "id": "catboost_00",
+      "family": "catboost",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "iterations": 300,
+        "depth": 3,
+        "learning_rate": 0.04,
+        "l2_leaf_reg": 10
+      }
+    },
+    {
+      "id": "catboost_01",
+      "family": "catboost",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "iterations": 300,
+        "depth": 4,
+        "learning_rate": 0.04,
+        "l2_leaf_reg": 10
+      }
+    },
+    {
+      "id": "catboost_02",
+      "family": "catboost",
+      "stage": "coarse",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "iterations": 300,
+        "depth": 5,
+        "learning_rate": 0.04,
+        "l2_leaf_reg": 20
+      }
+    },
+    {
+      "id": "catboost_03",
+      "family": "catboost",
+      "stage": "coarse",
+      "pre": {
+        "shape": "signed_log",
+        "clip": 0.01,
+        "scale": "robust",
+        "indicators": true
+      },
+      "params": {
+        "iterations": 300,
+        "depth": 4,
+        "learning_rate": 0.04,
+        "l2_leaf_reg": 3
+      }
+    },
+    {
+      "id": "catboost_04",
+      "family": "catboost",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "iterations": 600,
+        "depth": 4,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 20
+      }
+    },
+    {
+      "id": "catboost_05",
+      "family": "catboost",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "iterations": 600,
+        "depth": 5,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 10
+      }
+    },
+    {
+      "id": "catboost_06",
+      "family": "catboost",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true,
+        "select": 100
+      },
+      "params": {
+        "iterations": 600,
+        "depth": 4,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 5
+      }
+    },
+    {
+      "id": "catboost_07",
+      "family": "catboost",
+      "stage": "refine",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "iterations": 600,
+        "depth": 3,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3
+      }
+    },
+    {
+      "id": "lightgbm_00",
+      "family": "lightgbm",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 180,
+        "num_leaves": 5,
+        "max_depth": 4,
+        "min_child_samples": 15,
+        "reg_lambda": 5,
+        "learning_rate": 0.04,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "id": "lightgbm_01",
+      "family": "lightgbm",
+      "stage": "coarse",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 180,
+        "num_leaves": 7,
+        "max_depth": 4,
+        "min_child_samples": 20,
+        "reg_lambda": 10,
+        "learning_rate": 0.04,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "id": "lightgbm_02",
+      "family": "lightgbm",
+      "stage": "coarse",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 180,
+        "num_leaves": 11,
+        "max_depth": 4,
+        "min_child_samples": 15,
+        "reg_lambda": 10,
+        "learning_rate": 0.04,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "id": "lightgbm_03",
+      "family": "lightgbm",
+      "stage": "coarse",
+      "pre": {
+        "shape": "signed_log",
+        "clip": 0.01,
+        "scale": "robust",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 180,
+        "num_leaves": 7,
+        "max_depth": 4,
+        "min_child_samples": 25,
+        "reg_lambda": 1,
+        "learning_rate": 0.04,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "id": "lightgbm_04",
+      "family": "lightgbm",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 350,
+        "num_leaves": 7,
+        "max_depth": 4,
+        "min_child_samples": 12,
+        "reg_lambda": 10,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "id": "lightgbm_05",
+      "family": "lightgbm",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 350,
+        "num_leaves": 11,
+        "max_depth": 4,
+        "min_child_samples": 20,
+        "reg_lambda": 5,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "id": "lightgbm_06",
+      "family": "lightgbm",
+      "stage": "refine",
+      "pre": {
+        "shape": "identity",
+        "clip": 0.01,
+        "scale": "standard",
+        "indicators": true,
+        "select": 100
+      },
+      "params": {
+        "n_estimators": 350,
+        "num_leaves": 7,
+        "max_depth": 4,
+        "min_child_samples": 15,
+        "reg_lambda": 5,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "id": "lightgbm_07",
+      "family": "lightgbm",
+      "stage": "refine",
+      "pre": {
+        "shape": "rank",
+        "clip": 0,
+        "scale": "standard",
+        "indicators": true
+      },
+      "params": {
+        "n_estimators": 350,
+        "num_leaves": 5,
+        "max_depth": 4,
+        "min_child_samples": 25,
+        "reg_lambda": 20,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.8
+      }
+    }
+  ]
+}

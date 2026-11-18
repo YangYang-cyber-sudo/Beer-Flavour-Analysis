@@ -1,0 +1,11 @@
+﻿grouping,group,n,mean_r2,median_r2,n_weak_below_0_1
+modality,Aroma,15,0.1591,0.1113,6
+modality,Overall,1,0.0815,0.0815,1
+modality,Palate,4,0.4965,0.4954,0
+modality,Taste,30,0.2277,0.1759,11
+source,Hops,10,0.2197,0.1759,2
+source,Malt,10,0.2379,0.2469,3
+source,NA,3,0.3575,0.4825,1
+source,Others,12,0.1882,0.1148,5
+source,Wild flora,3,0.4223,0.5773,1
+source,Yeast,12,0.1761,0.1241,6

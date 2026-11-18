@@ -1,0 +1,20 @@
+﻿compound,sensory_attribute,threshold_field,pct_samples_above_threshold,univariate_spearman_rho,attribute_oof_r2
+Ethanol,Alcohol,ethanol..v.v.,97.6,0.8171,0.6823
+Iso-alpha acids,Bitterness,bitterness,86.4,0.6822,0.5879
+Protein,Body,protein.g.L.,99.6,0.2731,0.5084
+Glycerol,Body,glycerol,2.8,0.5726,0.5084
+Sugars,Sweetness,GFS,18.0,0.373,0.2494
+Acetic acid,Acidity,,-,0.416,0.6508
+Lactic acid,Lactic acid,,-,0.4475,0.6263
+Dimethyl sulfide,Dimethyl sulfide,DMS,67.2,0.0879,0.0707
+Hydrogen sulfide,Dimethyl sulfide,H2S,92.0,0.1385,0.0707
+4-vinylguaiacol,4-vinyl guaiacol,X4VG,6.4,0.4726,0.1919
+4-vinylguaiacol,Clove,X4VG,6.4,0.1703,0.0059
+Acetaldehyde,Stale hops,acetaldehyde,0.0,-0.0999,0.0454
+Linalool,Esters aroma - floral,linalool,98.4,0.1098,0.0607
+Geraniol,Esters aroma - floral,geraniol,75.6,0.1677,0.0607
+Citronellol,Esters aroma - floral,citronellol,92.4,0.1125,0.0607
+Linalool,Hops aroma - citrus,linalool,98.4,0.3267,0.1113
+Linalool,Hops aroma - tropical fruit,linalool,98.4,0.2249,0.099
+Linalool,Esters aroma - fruity,linalool,98.4,0.0651,0.012
+Isobutanol,Esters aroma - banana,isobutanol,0.0,0.0686,0.0631

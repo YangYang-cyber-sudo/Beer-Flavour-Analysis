@@ -1,0 +1,251 @@
+﻿beer_name_raw,official_beer_4csv,style_raw,first_tasting_date,n_records,mapping_method,confidence
+1,10,Low-No Alcohol,2016-02-17,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+2,86,Low-No Alcohol,2016-02-17,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+3,2,Low-No Alcohol,2016-02-17,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+4,83,Low-No Alcohol,2016-02-17,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+5,40,Low-No Alcohol,2016-02-10,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+6,247,Kriek & Fruitbeer,2016-06-03,4,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+7,48,Amber-Brown-Dubbel,2016-02-03,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+8,165,Kriek & Fruitbeer,2016-06-03,4,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+9,124,Pils,2016-01-15,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+10,207,Kriek & Fruitbeer,2016-06-03,4,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+11,155,Low-No Alcohol,2016-02-17,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+12,141,Low-No Alcohol,2016-02-17,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+13,179,Flemish ales,2016-05-20,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+14,33,Kriek & Fruitbeer,2016-06-03,4,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+15,50,Kriek & Fruitbeer,2016-06-03,4,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+16,227,Kriek & Fruitbeer,2016-06-03,4,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+17,88,Kriek & Fruitbeer,2016-06-01,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+18,77,Blond,2016-04-22,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+19,22,Wit,2016-02-24,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+20,81,Pils,2016-01-13,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+21,202,Stout & Porter,2016-04-27,28,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+22,64,Blond,2015-12-09,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+23,218,Pils,2015-12-18,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+24,96,Pils,2016-01-13,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+25,230,Pils,2016-01-15,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+26,44,Wit,2016-02-24,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+27,161,Flemish ales,2016-05-20,18,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+28,195,Wit,2016-02-26,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+29,142,Wit,2016-02-24,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+30,137,Amber-Brown-Dubbel,2016-04-29,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+31,236,Brett,2016-02-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+32,223,Low-No Alcohol,2016-02-17,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+33,211,Geuze & Faro,2016-05-25,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+34,190,Flemish ales,2016-05-20,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+35,197,Wit,2016-02-26,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+36,228,Tripel,2016-02-17,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+37,185,Pils,2016-01-15,19,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+38,166,Saison,2016-02-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+39,216,Amber-Brown-Dubbel,2016-10-14,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+40,200,Flemish ales,2016-05-18,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+41,116,Geuze & Faro,2016-05-27,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+42,139,Pils,2015-12-18,27,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+43,183,Saison,2016-04-01,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+44,111,Amber-Brown-Dubbel,2016-02-03,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+45,46,Blond,2015-12-09,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+46,213,Hoppy,2016-04-08,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+47,250,Geuze & Faro,2016-05-27,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+48,158,Amber-Brown-Dubbel,2016-01-29,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+49,224,Wit,2016-02-26,31,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+50,54,Kriek & Fruitbeer,2017-10-26,4,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+51,5,Blond,2017-10-26,4,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+52,209,Pils,2015-12-18,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+53,58,Saison,2016-02-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+54,11,Amber-Brown-Dubbel,2016-04-29,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+55,56,Saison,2016-04-01,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+56,84,Flemish ales,2016-05-18,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+57,172,Wit,2016-02-26,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+58,74,Geuze & Faro,2016-05-27,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+59,188,Stout & Porter,2016-04-20,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+60,20,Saison,2016-04-01,13,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+61,122,Brett,2016-02-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+62,169,Hoppy,2016-04-08,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+63,194,Amber-Brown-Dubbel,2016-02-03,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+64,160,Wit,2016-02-24,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+65,43,Amber-Brown-Dubbel,2016-01-29,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+66,100,Amber-Brown-Dubbel,2016-02-03,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+67,7,Saison,2016-02-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+68,62,Blond,2015-12-16,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+69,55,Hoppy,2016-10-14,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+70,26,Flemish ales,2016-05-18,18,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+71,232,Kriek & Fruitbeer,2016-06-01,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+72,151,Geuze & Faro,2016-05-27,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+73,61,Stout & Porter,2016-04-20,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+74,156,Kriek & Fruitbeer,2016-06-01,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+75,138,Kriek & Fruitbeer,2016-06-01,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+76,70,Blond,2015-12-16,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+77,113,Blond,2015-12-16,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+78,176,Flemish ales,2016-05-18,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+79,105,Strong ale,2016-06-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+80,167,Flemish ales,2016-05-20,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+81,59,Blond,2015-12-16,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+82,135,Tripel,2016-01-20,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+83,82,Kriek & Fruitbeer,2016-06-01,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+84,241,Kriek & Fruitbeer,2016-02-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+85,128,Amber-Brown-Dubbel,2016-01-29,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+86,244,Flemish ales,2016-05-18,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+87,178,Flemish ales,2016-05-18,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+88,110,Blond,2015-12-09,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+89,231,Stout & Porter,2016-04-27,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+90,112,Amber-Brown-Dubbel,2016-04-29,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+91,219,Hoppy,2016-04-08,17,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+92,129,Amber-Brown-Dubbel,2016-02-05,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+93,42,Geuze & Faro,2016-02-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+94,72,Hoppy,2016-04-06,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+95,186,Strong ale,2016-07-20,3,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+96,109,Amber-Brown-Dubbel,2016-04-29,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+97,246,Blond,2016-04-08,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+98,97,Hoppy,2016-04-29,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+99,87,Stout & Porter,2016-04-27,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+100,220,Kriek & Fruitbeer,2016-06-01,14,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+101,201,Stout & Porter,2016-04-20,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+102,14,Brett,2016-05-25,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+103,173,Stout & Porter,2016-04-20,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+104,37,Strong ale,2016-05-11,31,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+105,119,Pils,2015-12-18,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+106,177,Kriek & Fruitbeer,2017-10-26,4,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+107,106,Christmas,2016-06-08,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+108,159,Flemish ales,2016-05-20,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+109,90,Pils,2016-01-15,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+110,92,Amber-Brown-Dubbel,2016-02-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+111,93,Tripel,2016-01-20,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+112,238,Blond,2015-12-16,21,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+113,76,Blond,2015-12-09,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+114,107,Amber-Brown-Dubbel,2016-02-03,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+115,205,Blond,2016-07-20,3,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+116,206,Amber-Brown-Dubbel,2016-02-05,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+117,53,Amber-Brown-Dubbel,2016-04-29,18,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+118,24,Kriek & Fruitbeer,2016-06-01,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+119,136,Tripel,2016-02-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+120,69,Tripel,2016-01-22,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+121,180,Christmas,2016-06-08,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+122,49,Blond,2015-12-11,13,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+123,243,Wit,2016-02-26,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+124,134,Strong ale,2016-05-11,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+125,193,Blond,2015-12-16,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+126,39,Hoppy,2016-10-14,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+127,240,Tripel,2016-04-22,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+128,12,Geuze & Faro,2016-05-27,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+129,150,Brett,2016-05-25,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+130,23,Tripel,2016-01-22,19,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+131,226,Strong ale,2016-05-04,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+132,29,Saison,2016-04-01,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+133,132,Hoppy,2016-04-01,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+134,16,Amber-Brown-Dubbel,2016-02-03,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+135,47,Tripel,2016-01-20,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+136,164,Blond,2016-01-27,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+137,115,Wit,2016-05-27,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+138,149,Blond,2016-06-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+139,80,Hoppy,2016-04-08,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+140,120,Hoppy,2016-02-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+141,222,Brett,2016-01-29,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+142,18,Geuze & Faro,2016-05-27,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+143,98,Amber-Brown-Dubbel,2016-02-05,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+144,221,Amber-Brown-Dubbel,2016-02-03,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+145,32,Amber-Brown-Dubbel,2016-01-29,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+146,27,Hoppy,2016-10-14,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+147,13,Christmas,2016-06-08,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+148,174,Amber-Brown-Dubbel,2016-02-03,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+149,79,Stout & Porter,2016-04-08,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+150,118,Flemish ales,2016-05-18,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+151,152,Wit,2016-02-24,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+152,184,Kriek & Fruitbeer,2017-10-26,4,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+153,19,Amber-Brown-Dubbel,2016-01-29,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+154,145,Saison,2016-04-01,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+155,125,Hoppy,2016-01-27,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+156,6,Amber-Brown-Dubbel,2016-01-29,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+157,212,Stout & Porter,2016-04-20,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+158,78,Amber-Brown-Dubbel,2016-02-05,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+159,234,Blond,2016-01-27,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+160,147,Tripel,2016-01-22,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+161,66,Tripel,2016-01-20,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+162,249,Blond,2016-04-22,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+163,104,Strong ale,2016-05-04,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+164,101,Blond,2016-04-22,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+165,237,Amber-Brown-Dubbel,2016-02-05,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+166,127,Blond,2016-06-10,25,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+167,245,Tripel,2016-01-20,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+168,191,Tripel,2016-01-22,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+169,60,Christmas,2016-02-17,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+170,51,Strong ale,2016-05-11,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+171,144,Geuze & Faro,2016-05-27,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+172,28,Pils,2016-01-13,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+173,41,Geuze & Faro,2016-05-25,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+174,153,Kriek & Fruitbeer,2016-06-01,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+175,146,Amber-Brown-Dubbel,2016-10-14,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+176,168,Amber-Brown-Dubbel,2016-10-14,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+177,30,Tripel,2016-01-27,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+178,36,Strong ale,2016-02-05,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+179,126,Amber-Brown-Dubbel,2016-06-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+180,162,Geuze & Faro,2016-05-25,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+181,123,Stout & Porter,2016-02-17,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+182,130,Blond,2016-07-20,3,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+183,8,Hoppy,2016-10-14,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+184,31,Hoppy,2016-04-08,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+185,52,Stout & Porter,2016-04-27,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+186,9,Hoppy,2016-04-06,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+187,204,Tripel,2016-01-20,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+188,94,Blond,2015-12-11,13,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+189,131,Amber-Brown-Dubbel,2016-10-14,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+190,75,Geuze & Faro,2016-05-27,19,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+191,34,Tripel,2016-01-20,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+192,108,Amber-Brown-Dubbel,2016-02-05,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+193,187,Amber-Brown-Dubbel,2016-02-03,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+194,45,Tripel,2016-02-03,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+195,154,Tripel,2016-04-22,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+196,121,Blond,2015-12-11,13,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+197,242,Saison,2016-04-01,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+198,208,Wit,2016-02-24,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+199,38,Christmas,2016-10-10,3,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+200,170,Strong ale,2016-06-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+201,214,Christmas,2016-10-10,21,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+202,35,Blond,2016-01-27,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+203,215,Blond,2016-01-27,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+204,235,Strong ale,2016-05-04,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+205,89,Amber-Brown-Dubbel,2016-02-05,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+206,114,Hoppy,2016-04-08,24,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+207,181,Christmas,2016-06-08,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+208,225,Strong ale,2016-05-11,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+209,57,Tripel,2016-04-22,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+210,143,Hoppy,2016-04-06,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+211,133,Tripel,2016-05-04,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+212,182,Stout & Porter,2016-04-27,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+213,17,Tripel,2016-06-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+214,229,Wit,2016-02-26,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+215,148,Strong ale,2016-05-04,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+216,248,Blond,2015-12-11,13,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+217,65,Hoppy,2016-04-06,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+218,73,Blond,2016-01-27,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+219,198,Amber-Brown-Dubbel,2016-04-29,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+220,91,Strong ale,2016-05-11,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+221,217,Tripel,2016-01-22,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+222,163,Tripel,2016-01-22,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+223,68,Tripel,2016-07-20,3,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+224,15,Tripel,2016-06-10,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+225,1,Tripel,2016-07-20,3,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+226,71,Blond,2016-01-27,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+227,102,Christmas,2017-10-26,4,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+228,140,Tripel,2016-01-20,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+229,67,Stout & Porter,2016-07-20,3,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+230,210,Amber-Brown-Dubbel,2016-01-29,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+231,189,Tripel,2016-01-22,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+232,233,Amber-Brown-Dubbel,2016-02-17,5,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+233,199,Tripel,2016-01-22,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+234,63,Amber-Brown-Dubbel,2016-01-27,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+235,95,Christmas,2016-06-08,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+236,25,Amber-Brown-Dubbel,2016-02-05,8,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+237,203,Brett,2016-05-25,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+238,85,Tripel,2016-04-22,10,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+239,3,Blond,2015-12-11,13,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+240,21,Geuze & Faro,2016-05-27,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+241,192,Strong ale,2016-07-20,3,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+242,239,Tripel,2016-01-22,11,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+243,117,Strong ale,2016-10-10,3,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+244,171,Tripel,2016-07-20,3,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+245,103,Stout & Porter,2016-07-20,3,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+246,175,Strong ale,2016-05-11,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+247,196,Strong ale,2016-05-11,7,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+248,4,Strong ale,2016-05-11,6,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+249,99,Strong ale,2016-05-04,9,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed
+250,157,Tripel,2016-07-20,3,hungarian_on_50d_standardized_fingerprint,inferred_NOT_officially_confirmed

@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "seed": 20261114,
+    "source": "next_stage_analysis.py::q2_style_recheck",
+    "pool_rule": "Top-3 + top20 |pooled Spearman|",
+    "full_pool_columns": 231,
+    "n_styles": 22
+  },
+  "reproduction": {
+    "targets": 50,
+    "mean_jaccard": 0.162,
+    "median_jaccard": 0.2,
+    "identical": 0,
+    "disjoint": 17,
+    "partial": 33,
+    "mean_jaccard_strict": 0.15,
+    "disjoint_strict": 17,
+    "n_styles": 22
+  },
+  "full_pool": {
+    "mean_jaccard": 0.126,
+    "median_jaccard": 0.2,
+    "disjoint": 23,
+    "identical": 0
+  },
+  "null_models": {
+    "random_top3_mean": 0.0811,
+    "random_top3_median": 0.0,
+    "random_top3_p05": 0.0,
+    "random_top3_disjoint_fraction": 0.6482,
+    "style_label_permutation_reps": 30,
+    "style_perm_mean_jaccard_mean": 0.18086666666666668,
+    "style_perm_mean_jaccard_sd": 0.015710162169828127,
+    "style_perm_min": 0.152,
+    "style_perm_max": 0.222,
+    "observed_vs_perm_z": -1.2009211911829092
+  },
+  "stratification": {
+    "n_disjoint": 17,
+    "n_non_disjoint": 33,
+    "r2_mean_disjoint": 0.18729370588235295,
+    "r2_mean_others": 0.27473027272727274,
+    "r2_median_disjoint": 0.175818,
+    "r2_median_others": 0.211215,
+    "mannwhitney_U": 241.0,
+    "mannwhitney_p_one_sided_less": 0.2122295124299784,
+    "weak_r2_below_0_1_disjoint": 4,
+    "weak_r2_below_0_1_others": 10,
+    "class_counts_disjoint": {
+      "aroma": 7,
+      "flavour": 7,
+      "other/taste/palate": 3
+    },
+    "class_counts_others": {
+      "other/taste/palate": 17,
+      "aroma": 8,
+      "flavour": 8
+    },
+    "disjoint_targets": [
+      "A_esters_ethac",
+      "A_hops_tropical",
+      "A_hops_woody",
+      "A_malt_all",
+      "A_malt_burn",
+      "A_malt_cara",
+      "A_malt_grain",
+      "F_esters_all",
+      "F_esters_fruity",
+      "F_hops_citrus",
+      "F_hops_tropical",
+      "F_hops_woody",
+      "F_malt_burn",
+      "F_malt_cara",
+      "dms",
+      "metallic",
+      "t2n"
+    ]
+  }
+}

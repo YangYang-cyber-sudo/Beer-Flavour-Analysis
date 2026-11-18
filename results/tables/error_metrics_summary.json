@@ -1,0 +1,89 @@
+{
+  "n_targets": 50,
+  "n_samples": 250,
+  "max_abs_label_diff_4csv_vs_truth": 0.0,
+  "max_abs_r2_gap_vs_published_csv": 0,
+  "spearman_r2_vs_sd": {
+    "rho": 0.75546,
+    "p": 2.2932434613719238e-10
+  },
+  "spearman_r2_vs_pred_rho": {
+    "rho": 0.8974,
+    "p": 1.1140669796898645e-18
+  },
+  "spearman_sd_vs_pred_rho": {
+    "rho": 0.67184,
+    "p": 9.217251456110985e-08
+  },
+  "spearman_r2_vs_rmse": {
+    "rho": 0.08245,
+    "p": 0.569192715158503
+  },
+  "n_significant_rank_all": 49,
+  "n_significant_rank_unsupported": 17,
+  "unsupported_targets": 18,
+  "unsupported_significant": [
+    "A_malt_grain",
+    "A_malt_bread",
+    "A_hops_tropical",
+    "A_esters_isoaa",
+    "A_esters_flower",
+    "F_malt_grain",
+    "F_hops_tropical",
+    "F_esters_isoaa",
+    "F_esters_flower",
+    "F_esters_fruity",
+    "diacetyl",
+    "dms",
+    "stale_hops",
+    "t2n",
+    "clove",
+    "barnyard",
+    "overall"
+  ],
+  "unsupported_not_significant": [
+    "A_esters_fruity"
+  ],
+  "mannwhitney": {
+    "rho_high_gt_low": {
+      "U": 162.0,
+      "p": 1.7329503307440175e-05
+    },
+    "rmse_high_vs_low": {
+      "U": 62.0,
+      "p": 0.3413316805006916
+    },
+    "sd_high_gt_low": {
+      "U": 160.0,
+      "p": 2.6999916431545457e-05
+    }
+  },
+  "group_high": {
+    "grouping": "tier_by_r2",
+    "group": "high",
+    "n": 9,
+    "mean_r2": 0.5613,
+    "mean_truth_sd": 0.7111,
+    "mean_rmse": 0.4568,
+    "mean_nrmse_sd": 0.6475,
+    "mean_rho": 0.663,
+    "median_rho": 0.7213,
+    "n_significant_rank": 9,
+    "mean_error_reduction_pct": 35.25,
+    "mean_near_floor": 0.1964
+  },
+  "group_unsupported": {
+    "grouping": "tier_by_r2",
+    "group": "unsupported",
+    "n": 18,
+    "mean_r2": 0.058,
+    "mean_truth_sd": 0.4957,
+    "mean_rmse": 0.4768,
+    "mean_nrmse_sd": 0.9627,
+    "mean_rho": 0.2504,
+    "median_rho": 0.254,
+    "n_significant_rank": 17,
+    "mean_error_reduction_pct": 3.73,
+    "mean_near_floor": 0.1842
+  }
+}

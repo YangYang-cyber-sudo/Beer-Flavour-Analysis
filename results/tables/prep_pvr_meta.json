@@ -1,0 +1,26 @@
+{
+  "iterations": {
+    "2": 1627,
+    "3": 1182,
+    "4": 1295,
+    "0": 1760,
+    "1": 1737
+  },
+  "iteration_source": {
+    "2": "search_costs_folds234.csv",
+    "3": "search_costs_folds234.csv",
+    "4": "search_costs_folds234.csv",
+    "0": "joblib.info.best_iterations",
+    "1": "joblib.info.best_iterations"
+  },
+  "reproduction_gap_macro_r2": 0.0,
+  "published_macro_r2": 0.2608425525496092,
+  "rerun_W_macro_r2": 0.2608425525496092,
+  "seed": 2602731,
+  "arms": [
+    "W_paper",
+    "R_control",
+    "R_fold",
+    "R_global"
+  ]
+}

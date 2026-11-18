@@ -1,0 +1,75 @@
+{
+  "id": "prep_paper_vs_routine_v1",
+  "created_utc": "2026-11-15",
+  "status": "frozen_before_any_model_fit",
+  "question": "以竞赛论文 A2601731 表 5/表 6 的正式主结果为『我们的方法』，在同一模型、同一冻结划分、同一 5 外折 OOF 严格验证下，常规数据预处理会得到多高的 R2 / RMSE / MAE / Spearman rho？差异能否归因于预处理？",
+  "reference_arm": {
+    "name": "W_paper",
+    "source": "A2601731.pdf 表 5/表 6；Q1_FINAL_COMPARISON.csv；q1_v3_runs/v3_full5_summary/oof_depth3_l2_30_full5.csv",
+    "published_all50": {"macro_r2": 0.260843, "macro_rmse": 0.471020, "macro_mae": 0.336615},
+    "published_main37": {"macro_r2": 0.282596, "macro_rmse": 0.468672},
+    "published_af30": {"macro_r2": 0.220501, "macro_rmse": 0.473404},
+    "preprocessing_spec_verified_from": "analysis_2026a/q1_v3/protocol.json -> candidates[id=depth3_l2_30].pre",
+    "preprocessing_spec": {"shape": "identity", "clip": 0.01, "scale": "standard", "indicators": true, "select": 100},
+    "note": "该 spec 不含 signed_log / robust / 哨兵指示。此前 prep_h2h_* 构造的『我们的方法』并非论文主结果所用管线，属范畴错误，本文件予以纠正。"
+  },
+  "fixed_across_all_arms": {
+    "X": "analysis_2026a/official/附件/1.csv，250 x 231，保留原始字段编码与 -1.81781854 重复低值",
+    "Y": "analysis_2026a/official/附件/4.csv，250 x 50 连续标签",
+    "splits": "analysis_2026a/q1/splits/outer.csv（5 折各 50 款，seed 2601731）+ inner.csv（3 折，仅用于冻结早停轮数）",
+    "validation": "5 外折 OOF 合并 250 个折外预测；所有变换在训练折内拟合（R_global 除外，见 caveats）",
+    "model": "CatBoostRegressor(loss_function=MultiRMSE, eval_metric=MultiRMSE, depth=3, learning_rate=0.03, l2_leaf_reg=30, random_seed=2602731, thread_count=4, task_type=CPU, allow_writing_files=False)",
+    "iterations": "各外折冻结早停轮数：fold2=1627, fold3=1182, fold4=1295（search_costs_folds234.csv）；fold0/1 取自 development_v3_01/outer_*/depth3_l2_30.joblib 的 info.best_iterations，读取失败则统一回退 1200 并记录",
+    "target_transform": "(Y - train_mean) / max(train_std, 1e-10)，预测后逆变换，与 q1_v3/models.py EarlyCat 一致",
+    "scopes": "All50 / Main37 / AF30，目标清单取自 MathorCup_Performance_Files/table1_analog/Q1_FINAL_PER_TARGET.csv 的 main37 / af30 布尔列"
+  },
+  "arms": [
+    {
+      "id": "W_paper",
+      "role": "我们的方法 / 论文口径，重跑以校验复现",
+      "pre": {"shape": "identity", "clip": 0.01, "scale": "standard", "indicators": true, "select": 100},
+      "description": "折内 1/99% 截尾 + 折内 z-score + 缺失指示列 + 折内监督筛 100 列"
+    },
+    {
+      "id": "R_control",
+      "role": "常规质控，主对照",
+      "pre": {"shape": "identity", "clip": 0.01, "scale": "standard", "indicators": true, "select": 0},
+      "description": "与 W_paper 仅差折内监督筛 100 列，构成单因素对照"
+    },
+    {
+      "id": "R_fold",
+      "role": "常规做法 + 折内拟合边界",
+      "pre": {"shape": "identity", "clip": 0, "scale": "standard", "indicators": false, "select": 0},
+      "description": "折内均值填补 + 折内 z-score，全 231 列，无截尾 / 无指示 / 无筛选"
+    },
+    {
+      "id": "R_global",
+      "role": "最常见的朴素常规流程",
+      "pre": "global_fit",
+      "description": "在全部 250 款上一次性均值填补 + 全局 z-score，全 231 列；不区分训练折与测试折"
+    }
+  ],
+  "ladder": ["R_global", "R_fold", "R_control", "W_paper"],
+  "primary_contrast": "W_paper vs R_control（唯一单因素：折内监督特征筛选 100 列）",
+  "secondary_contrasts": ["W_paper vs R_fold", "W_paper vs R_global", "R_control vs R_fold", "R_fold vs R_global"],
+  "metrics": {
+    "per_target": ["r2", "rmse", "mae", "spearman_rho_pred_vs_truth"],
+    "macro": "50 / 37 / 30 个目标的算术平均",
+    "r2_definition": "1 - sum((y - yhat)^2) / sum((y - mean(y_all250))^2)",
+    "paired": "逐目标 250 个样品的平方误差差，Wilcoxon 符号秩检验，BH-FDR q<0.05",
+    "also_report": ["improved / regressed target counts", "fold-level direction consistency (5 folds)", "modality-stratified means"]
+  },
+  "reporting_rules": [
+    "四个臂与四个对比全部报告，不删除任何臂、任何模型、任何目标",
+    "不因结果方向追加新臂或新对比；如需追加，另建新预注册文件并标注 post-hoc",
+    "W_paper 重跑值与论文发表值并列报告，若偏差超过 0.01 macro R2 必须显式说明",
+    "主判据为绝对 RMSE 与逐目标配对检验；R2 与 RMSE 在同一 y 下同源，不作为独立第三证据",
+    "不得把 R_global 的信息泄漏优势解释为方法有效，也不得把 R_global 当公平基线"
+  ],
+  "caveats": [
+    "R_global 在全量数据上拟合均值/方差，含轻微信息泄漏，是常规流程的真实缺陷而非公平基线；其数值须标注",
+    "冻结早停轮数取自 W_paper 协议，两臂共用，属单因素设计所需；不单独重跑每臂内层选择",
+    "CatBoost 版本差异可能导致 W_paper 重跑值与论文值有微小偏差",
+    "本对照只评估预处理对预测误差的影响，不涉风味因果，不替代加标实验"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "random_top3_mean": 0.0811,
+  "random_top3_median": 0.0,
+  "random_top3_p05": 0.0,
+  "random_top3_disjoint_fraction": 0.6482,
+  "style_label_permutation_reps": 30,
+  "style_perm_mean_jaccard_mean": 0.18086666666666668,
+  "style_perm_mean_jaccard_sd": 0.015710162169828127,
+  "style_perm_min": 0.152,
+  "style_perm_max": 0.222,
+  "observed_vs_perm_z": -1.2009211911829092
+}

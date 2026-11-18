@@ -1,0 +1,146 @@
+{
+  "source": "Raw sensory data anonymized.csv",
+  "encoding": "cp1252",
+  "n_records": 2197,
+  "n_columns": 56,
+  "n_sensory_descriptors": 50,
+  "n_beers": 250,
+  "n_tasters": 16,
+  "n_tasting_dates": 37,
+  "date_range": [
+    "2015-12-09",
+    "2017-10-26"
+  ],
+  "n_style_labels_raw": 15,
+  "n_scored_cells": 109850,
+  "n_non_integer_cells": 0,
+  "n_empty_cells": 0,
+  "value_range": [
+    0,
+    6
+  ],
+  "all_integer_0_to_6": true,
+  "value_counts": {
+    "0": 64425,
+    "1": 8230,
+    "2": 11441,
+    "3": 11569,
+    "4": 9054,
+    "5": 4193,
+    "6": 938
+  },
+  "n_free_text_comments": 663,
+  "records_per_beer": {
+    "3": 12,
+    "4": 11,
+    "5": 21,
+    "6": 19,
+    "7": 25,
+    "8": 46,
+    "9": 40,
+    "10": 27,
+    "11": 27,
+    "13": 6,
+    "14": 1,
+    "17": 1,
+    "18": 3,
+    "19": 3,
+    "21": 2,
+    "24": 1,
+    "25": 1,
+    "27": 1,
+    "28": 1,
+    "31": 2
+  },
+  "n_beer_taster_pairs_with_multiple_records": 140,
+  "official_beer_col_note": "4.csv 的 beer 为官方编号, 与原始表 beer_name 非同一编号体系; 不可直接 join",
+  "official_style_n": 22,
+  "ABC_label_stats": {
+    "A": {
+      "min": 0.0,
+      "max": 6.0,
+      "mean": 1.2016276735905203,
+      "sd": 1.187502000248198,
+      "macro_sd_per_descriptor": 0.7289680775334805
+    },
+    "B": {
+      "min": 0.0,
+      "max": 6.0,
+      "mean": 1.2012104754134754,
+      "sd": 1.1873230467549367,
+      "macro_sd_per_descriptor": 0.7291617030751802
+    },
+    "C": {
+      "min": 0.0,
+      "max": 6.0,
+      "mean": 0.96448,
+      "sd": 1.400906252966272,
+      "macro_sd_per_descriptor": 0.8577856089636836
+    }
+  },
+  "AB_max_abs_diff": 0.4605128205128204,
+  "n_taster_descriptor_zero_variance_combos": 15,
+  "beer_map_style_cross_check": {
+    "n_style_consistent": 233,
+    "n_total": 250,
+    "pct": 93.2,
+    "top_mismatches": [
+      {
+        "raw": "Amber-Brown-Dubbel",
+        "official": "Scotch",
+        "n": 5
+      },
+      {
+        "raw": "Blond",
+        "official": "Brut",
+        "n": 2
+      },
+      {
+        "raw": "Tripel",
+        "official": "Blond",
+        "n": 2
+      },
+      {
+        "raw": "Hoppy",
+        "official": "Saison",
+        "n": 1
+      },
+      {
+        "raw": "Wit",
+        "official": "Lambic",
+        "n": 1
+      },
+      {
+        "raw": "Stout & Porter",
+        "official": "Hoppy",
+        "n": 1
+      },
+      {
+        "raw": "Hoppy",
+        "official": "Blond",
+        "n": 1
+      },
+      {
+        "raw": "Strong ale",
+        "official": "Brown",
+        "n": 1
+      },
+      {
+        "raw": "Tripel",
+        "official": "Strong ale",
+        "n": 1
+      },
+      {
+        "raw": "Tripel",
+        "official": "Brut",
+        "n": 1
+      },
+      {
+        "raw": "Strong ale",
+        "official": "Brut",
+        "n": 1
+      }
+    ],
+    "note": "不一致项多为粗分类无对应的细分风格(Scotch/Brut 等), 支持映射可信; 但映射仍属推断, 未经官方确认"
+  }
+}

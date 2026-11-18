@@ -1,0 +1,19 @@
+﻿compound,chemical_name,unit,threshold_mean,n_samples,n_nonzero,median_conc,max_conc,n_above_threshold,pct_above_threshold,note
+CS2,Carbon disulfide,ug/L,50.0,250,41,0.207015,0.9805,0,0.0,threshold from literature; concentration-column unit requires per-compound verification
+DES,Diethyl sulfide,ug/L,1.2,250,221,0.656585,4.69512,46,18.4,threshold from literature; concentration-column unit requires per-compound verification
+DMS,Dimethyl sulfide,ug/L,17.25,250,249,24.46354,520.451635,168,67.2,threshold from literature; concentration-column unit requires per-compound verification
+GFS,Sugars,g/L,2.9,250,244,0.1925,82.085,45,18.0,threshold from literature; concentration-column unit requires per-compound verification
+H2S,Hydrogen sulfide,ug/L,3.5,250,240,8.806351,49.44131,230,92.0,threshold from literature; concentration-column unit requires per-compound verification
+X4VG,4-vinylguaiacol,mg/L,0.206333,250,82,0.121226,0.68483,16,6.4,threshold from literature; concentration-column unit requires per-compound verification
+acetaldehyde,Acetaldehyde,mg/L,50.0,250,249,4.110985,18.56212,0,0.0,threshold from literature; concentration-column unit requires per-compound verification
+bitterness,Iso-alpha acids,IBU,5.0,250,248,18.17475,62.2505,216,86.4,threshold from literature; concentration-column unit requires per-compound verification
+citronellol,Citronellol,mg/L,0.0245,250,250,0.217621,11.741787,231,92.4,threshold from literature; concentration-column unit requires per-compound verification
+ethanol..v.v.,Ethanol,v/v,1.757256,250,249,7.195,11.64,244,97.6,threshold from literature; concentration-column unit requires per-compound verification
+furfural,Furfural,mg/L,60.0,249,248,0.008441,1.818861,0,0.0,threshold from literature; concentration-column unit requires per-compound verification
+geraniol,Geraniol,mg/L,0.0315,246,246,0.131485,2.363433,186,75.6,threshold from literature; concentration-column unit requires per-compound verification
+glycerol,Glycerol,g/L,4.433333,250,250,2.5475,5.975,7,2.8,threshold from literature; concentration-column unit requires per-compound verification
+iron,Iron,mg/L,0.1,250,247,0.095,5.035,112,44.8,threshold from literature; concentration-column unit requires per-compound verification
+isobutanol,Isobutanol,mg/L,80.0,250,245,11.112035,33.39596,0,0.0,threshold from literature; concentration-column unit requires per-compound verification
+linalool,Linalool,mg/L,0.027285,247,247,0.36973,33.567902,243,98.4,threshold from literature; concentration-column unit requires per-compound verification
+methylpyrazine,Methylpyrazine,mg/L,1.0,250,238,0.000289,0.896099,0,0.0,threshold from literature; concentration-column unit requires per-compound verification
+protein.g.L.,Protein,g/L,1.023933,250,250,7.5,35.2,249,99.6,threshold from literature; concentration-column unit requires per-compound verification

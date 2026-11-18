@@ -1,0 +1,33 @@
+{
+  "n_targets": 50,
+  "identity": "error_reduction_pct = 100 * (1 - RMSE / label_SD)",
+  "max_abs_gap_percentage_points": 0.005512,
+  "spearman": {
+    "r2_vs_error_reduction": {
+      "rho": 0.99916,
+      "p": 2.9317095063449353e-68
+    },
+    "r2_vs_label_sd": {
+      "rho": 0.75546,
+      "p": 2.2932434613719238e-10
+    },
+    "error_reduction_vs_label_sd": {
+      "rho": 0.76088,
+      "p": 1.431614701447293e-10
+    },
+    "r2_vs_absolute_rmse": {
+      "rho": 0.08245,
+      "p": 0.569192715158503
+    },
+    "r2_vs_pred_obs_rank_rho": {
+      "rho": 0.8974,
+      "p": 1.1140669796898645e-18
+    },
+    "pred_obs_rank_rho_vs_label_sd": {
+      "rho": 0.67184,
+      "p": 9.217251456110985e-08
+    }
+  },
+  "interpretation": "Error reduction, nRMSE and R2 are monotonic transforms of the same quantity RMSE/SD; they cannot serve as independent validation of one another. Only absolute RMSE and prediction-observation rank correlation add information, and the latter still correlates with label SD.",
+  "reporting_rule": "Do not place error_reduction_pct or R2 in the abstract, title or figure caption as a primary result. Report SD, absolute RMSE and rank rho together, and state the shared dependence on label SD in Limitations."
+}

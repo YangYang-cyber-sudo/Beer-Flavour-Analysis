@@ -1,0 +1,129 @@
+Beer-Flavour-Analysis/
+├── analysis/
+│   ├── preregistration/
+│   │   ├── prep_h2h_addendum_preregistration.json
+│   │   ├── prep_h2h_preregistration.json
+│   │   └── prep_paper_vs_routine_preregistration.json
+│   ├── __init__.py
+│   ├── error_metrics_reanalysis.py
+│   ├── metric_equivalence_check.py
+│   ├── prep_h2h.py
+│   ├── prep_h2h_addendum.py
+│   ├── prep_h2h_r2_metrics.py
+│   ├── prep_paper_vs_routine.py
+│   ├── raw_panel_audit.py
+│   ├── README.md
+│   ├── style_recheck.py
+│   └── threshold_definition_check.py
+├── data/
+│   ├── derived/
+│   │   ├── q1_final/
+│   │   │   ├── OOF_depth3_l2_30.csv
+│   │   │   └── Q1_FINAL_PER_TARGET.csv
+│   │   ├── q2_eligible_only/
+│   │   │   ├── crossfit_metrics.csv
+│   │   │   ├── crossfit_oof_extra.csv
+│   │   │   ├── crossfit_oof_ridge.csv
+│   │   │   └── top3_all_available.csv
+│   │   ├── q2_reference/
+│   │   │   └── q1_oof_truth_continuous.csv
+│   │   ├── q3_field_dictionary.csv
+│   │   ├── README.md
+│   │   └── SAMPLE_SIZE_REFERENCE_REPRODUCTION.csv
+│   └── README.md
+├── docs/
+│   ├── DATA_DICTIONARY.md
+│   ├── DATASET.md
+│   ├── FILE_TREE.txt
+│   ├── MISSING_ASSETS.md
+│   ├── RELEASE_AUDIT.md
+│   ├── REPRODUCING.md
+│   └── TEST_RECORD.md
+├── modelling/
+│   ├── __init__.py
+│   ├── __main__.py
+│   ├── config.py
+│   ├── data.py
+│   ├── engine.py
+│   ├── feature_metadata.csv
+│   ├── increment.py
+│   ├── models.py
+│   ├── plots.py
+│   ├── protocol.json
+│   └── README.md
+├── results/
+│   ├── predictions/
+│   │   ├── prep_h2h_addendum_oof.npz
+│   │   ├── prep_h2h_oof.npz
+│   │   └── prep_pvr_oof.npz
+│   ├── reports/
+│   │   ├── prep_pvr_report.md
+│   │   └── REPORT.md
+│   ├── tables/
+│   │   ├── compound_threshold_profile.csv
+│   │   ├── error_metrics_by_group.csv
+│   │   ├── error_metrics_by_target.csv
+│   │   ├── error_metrics_summary.json
+│   │   ├── metric_equivalence_check.json
+│   │   ├── monitorability_by_group.csv
+│   │   ├── prep_h2h_addendum_consistency.csv
+│   │   ├── prep_h2h_addendum_paired.csv
+│   │   ├── prep_h2h_addendum_per_target.csv
+│   │   ├── prep_h2h_addendum_results.json
+│   │   ├── prep_h2h_addendum_summary.csv
+│   │   ├── prep_h2h_diagnostics.json
+│   │   ├── prep_h2h_fold_rmse.csv
+│   │   ├── prep_h2h_ladder.csv
+│   │   ├── prep_h2h_model_consistency.csv
+│   │   ├── prep_h2h_paired.csv
+│   │   ├── prep_h2h_per_target.csv
+│   │   ├── prep_h2h_r2_by_target.csv
+│   │   ├── prep_h2h_r2_paired.csv
+│   │   ├── prep_h2h_r2_stratified.csv
+│   │   ├── prep_h2h_r2_summary.csv
+│   │   ├── prep_h2h_results.json
+│   │   ├── prep_h2h_stratified.csv
+│   │   ├── prep_h2h_summary.csv
+│   │   ├── prep_pvr_by_target.csv
+│   │   ├── prep_pvr_consistency.csv
+│   │   ├── prep_pvr_meta.json
+│   │   ├── prep_pvr_paired.csv
+│   │   ├── prep_pvr_stratified.csv
+│   │   ├── prep_pvr_summary.csv
+│   │   ├── q2_full_pool_top3.csv
+│   │   ├── q2_null_baselines.csv
+│   │   ├── q2_null_baselines.json
+│   │   ├── q2_style_recheck_summary.json
+│   │   ├── q2_within_style_top3.csv
+│   │   ├── raw_panel_audit.json
+│   │   ├── raw_panel_beer_map.csv
+│   │   ├── raw_panel_labels_A.csv
+│   │   ├── raw_panel_labels_B.csv
+│   │   ├── raw_panel_labels_C.csv
+│   │   ├── raw_panel_reconstruction_check.json
+│   │   ├── sensory_monitorability.csv
+│   │   ├── threshold_definition_check.csv
+│   │   └── threshold_sensory_link.csv
+│   └── README.md
+├── support/
+│   ├── __init__.py
+│   ├── audit.py
+│   ├── common.py
+│   ├── paths.py
+│   └── tabular.py
+├── tests/
+│   ├── smoke_test.py
+│   └── verify_archive.py
+├── validation/
+│   ├── splits/
+│   │   ├── definition.json
+│   │   ├── inner.csv
+│   │   └── outer.csv
+│   └── README.md
+├── .gitignore
+├── CITATION.cff
+├── LICENSE
+├── README.md
+├── requirements-lock.txt
+├── requirements.txt
+└── SHA256SUMS.txt
