@@ -275,3 +275,16 @@ the source dataset does not apply to this repository's code.
 ## 10. Contact
 
 Honghao Cai, School of Science, Jimei University — hhcai@jmu.edu.cn
+
+## 11.Supplementary Materials
+
+The supplementary materials associated with this study are provided
+in the `supplementary/` directory.
+
+- `Supplementary_Material_JFS.docx`: Supplementary Tables S1–S9
+  and Supplementary Figure S1.
+- `S1_Code_and_Splits.zip`: Analysis code, frozen cross-validation
+  splits, out-of-fold predictions for all 50 sensory descriptors,
+  and supporting analysis scripts and outputs.
+
+The original public dataset is not redistributed.
